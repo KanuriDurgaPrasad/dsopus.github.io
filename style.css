@@ -1,0 +1,756 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    scroll-behavior: smooth ;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.main__container {
+    
+    min-height: 100vh;
+    width: 100vw;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home__container {
+    min-height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    padding: 38vh 0 110px 0;
+    background-image: url("home__page.jpg");
+
+}
+
+
+.ds__opus__icon {
+    height: 38px;
+    width: 38px;
+    margin: 0 0 0 10px;
+}
+
+
+
+.home__maincontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 0;
+    position: relative;
+    font-size: 8vw;
+    color: linear-gradient(to right, #292626, #242121);
+    -webkit-text-stroke: 0vw #ffd653ff;
+
+
+
+}
+
+
+
+.home__maincontent h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 0;
+    position: relative;
+    font-size: 8vw;
+    color: rgb(88, 80, 80);
+    -webkit-text-stroke: 0.1vw rgb(71, 67, 67);
+
+
+
+}
+
+.home__maincontent h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(110, 110, 105);
+    -webkit-text-stroke: 0.00000001vw rgb(177, 153, 153);
+    border-right: 5px solid;
+    background: #11110f;
+    /* fallback for old browsers */
+    background: #fffc00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    ;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    30%,
+    90% {
+        width: 100%;
+    }
+}
+
+.home__sidecontent h2{
+    font-size: 4vw;
+    background: #304352;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    ;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 0 0 0 100px;
+
+}
+
+/* mobile home frame works*/
+
+.mobile__home__maincontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 0;
+    position: relative;
+    font-size: 8vw;
+    color: linear-gradient(to right, #292626, #242121);
+    -webkit-text-stroke: 0vw #ffd653ff;
+
+
+
+}
+
+
+.mobile__home__maincontent h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 50px;
+    position: relative;
+    font-size: 8vw;
+    color: rgb(88, 80, 80);
+    -webkit-text-stroke: 0.1vw rgb(71, 67, 67);
+  
+
+
+
+}
+
+.mobile__home__maincontent h2::before {
+    padding: 0 0 0 50px;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(110, 110, 105);
+    -webkit-text-stroke: 0.00000001vw rgb(177, 153, 153);
+    border-right: 5px solid;
+     background: #11110f;
+    /* fallback for old browsers */
+    background: #fffc00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    ;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    30%,
+    90% {
+        width: 100%;
+    }
+}
+
+.mobile__home__sidecontent {
+    font-size: 4vw;
+     background: #304352;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    ;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 50px 40px 40px 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.honeygain__neon__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 0 0;
+}
+
+.neon__button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.neon__button__container a {
+    font-size: 11px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #0f0;
+    margin: 0 110px 0 110px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0s;
+    transition-delay: 0s;
+}
+
+.neon__button__container a:hover {
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 10px #0f0,
+        0 0 20px #0f0,
+        0 0 40px #0f0,
+        0 0 80px #0f0,
+        0 0 160px #0f0;
+}
+
+.neon__button__container a span {
+    position: relative;
+    z-index: 100;
+}
+
+.neon__button__container a:nth-child(2) {
+    filter: hue-rotate(80deg);
+}
+
+.neon__button__container a::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: 5px -8px 0 #0f0,
+        5px 8px 0 #0f0;
+    transition: width 0.5s, left 1s, height 0.5s,
+        box-shadow 0.5s;
+    transition-delay: 1s, 1s, 0s, 0s;
+}
+
+.neon__button__container a:hover::before {
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #0f0,
+        5px 0 0 #0f0;
+    transition-delay: 0s, 0s, 1s, 1s;
+
+}
+
+.neon__button__container a::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: -5px -8px 0 #0f0,
+        -5px 8px 0 #0f0;
+    transition: width 0.5s, right 1s, height 0.5s,
+        box-shadow 0.5s;
+    transition-delay: 1s, 1s, 0s, 0s;
+}
+
+.neon__button__container a:hover::after {
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #0f0,
+        -5px 0 0 #0f0;
+    transition-delay: 0s, 0s, 1s, 1s;
+}
+
+
+
+/* VR room section*/
+
+
+.vr__rooms__container {
+    padding-top: 6rem;
+    background-image: url("vr__page__1.jpg");
+
+
+    width: 100vw;
+    background-size: cover;
+    
+
+}
+
+.vr__room__mini__one {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    padding: 13px 55px 13px 1px;
+    border-radius: 15px;
+    
+}
+
+.vr__room__mini__two {
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    padding: 13px 55px 13px 1px;
+    border-radius: 15px;
+
+}
+
+.vr__room__mini__three {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 13px 55px 13px 1px;
+    border-radius: 15px;
+
+}
+
+
+.vr__room__box {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #060c21;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.vr__room__imgBX {
+    height: 100vh;
+    width: 80vw;
+    
+    
+}
+
+.vr__room__box:hover {
+    height: 400px;
+    border-radius: 10px;
+}
+
+.vr__room__box .vr__room__imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.vr__room__box .vr__room__imgBx img {
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+    
+}
+
+.vr__room__box:hover .vr__room__imgBx img {
+    opacity: 1;
+    border-radius: 10px;
+    opacity: 65%;
+}
+
+.vr__room__box:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: #fff;
+    z-index: -1;
+    
+}
+
+.vr__room__box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(50px);
+    
+}
+
+.vr__room__box1:before,
+.vr__room__box1:after {
+    background: linear-gradient(235deg, #2de12a, #011505, #3ad9df);
+    
+}
+
+.vr__room__box2:before,
+.vr__room__box2:after {
+    background: linear-gradient(235deg, #2de12a, #010615, #3ad9df);
+}
+
+.vr__room__box3:before,
+.vr__room__box3:after {
+    background: linear-gradient(235deg, #2de12a, #010615, #3ad9df);
+}
+
+.vr__room__box:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.vr__room__box .vr__room__content {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.vr__room__box:hover .vr__room__content {
+    opacity: 1;
+}
+
+.vr__room__box .vr__room__content h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.vr__room__box .vr__room__content h2 span {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.vr__line {
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    height: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px 0 40px 0;
+    border-radius: 5px;
+}
+
+
+
+/*Social media section*/
+.socialmedia__section {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    padding-bottom: 7rem;
+    background-image: url("https://images.unsplash.com/photo-1554147090-e1221a04a025?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=848&q=80");
+
+
+    
+}
+
+
+
+.socialmedia__line{
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 3px;
+    border-radius: 5px;
+}
+
+
+
+.socialmedia__section{
+    
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.socialmedia__section__heading{ 
+    font-family: Serif;
+    padding: 40px 0 50px 0;
+    font-size: 3vw;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+
+}
+
+
+
+.socialmedia__wrapper .socialmedia__button .socialmedia__icons .socialmedia__icon{
+    height: 60px;
+    width: 60px;
+    float: ;
+    overflow: hidden;
+    margin: 0 6px;
+    background:rgb(241, 220, 220);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    align-items: center;
+}
+
+
+
+.socialmedia__wrapper .socialmedia__button .socialmedia__icon{
+    
+    height: 60px;
+    width: 60px;
+    padding: 10px 15px 15px 20px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 40px;
+    transition: all 0.3s ease-out;
+
+}
+
+.socialmedia__wrapper .socialmedia__button:nth-child(1):hover .socialmedia__icon {
+  
+}
+
+.socialmedia__wrapper .socialmedia__button:nth-child(2):hover .socialmedia__icon{
+    
+}
+
+.socialmedia__wrapper .socialmedia__button:nth-child(3):hover .socialmedia__icon{
+    
+}
+
+.socialmedia__wrapper .socialmedia__button:nth-child(4):hover .socialmedia__icon{
+    
+}
+
+.socialmedia__wrapper .socialmedia__button:nth-child(5):hover .socialmedia__icon{
+    
+}
+
+.socialmedia__wrapper .socialmedia__button:nth-child(6):hover .socialmedia__icon{
+    
+}
+
+
+.socialmedia__wrapper .socialmedia__button .socialmedia__icon i{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.socialmedia__wrapper .socialmedia__button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.socialmedia__icons span{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+
+/*Social media Hover section*/
+
+
+.socialmedia__wrapper .socialmedia__button .icon__facebook:hover{
+  
+    height: 65px;
+    width: 65px;
+    margin: 0 100px 80px 0;
+    padding: 12px 11.5vw 8px 15px;
+    background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+
+}
+
+
+.socialmedia__wrapper .socialmedia__button .icon__instagram:hover{
+  
+    height: 65px;
+    width: 65px;
+    margin: 0 100px 80px 0;
+    padding: 12px 11.5vw 8px 15px;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+
+
+}
+
+
+.socialmedia__wrapper .socialmedia__button .icon__twitter:hover{
+  
+    height: 65px;
+    width: 65px;
+    margin: 0 100px 80px 0;
+    padding: 12px 11.5vw 8px 15px;
+    background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #c2b7b7, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #c2b7b7, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+.socialmedia__wrapper .socialmedia__button .icon__github:hover{
+  
+    height: 65px;
+    width: 65px;
+    margin: 0 100px 80px 0;
+    padding: 12px 11.5vw 8px 15px;
+    background: #1F1C2C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+}
+
+
+
+
+.socialmedia__wrapper .socialmedia__button .icon__youtube:hover{
+    
+    height: 65px;
+    width: 65px;
+    margin: 0 100px 80px 0;
+    padding: 12px 11.5vw 8px 15px;
+    background: #e52d27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+.socialmedia__wrapper .socialmedia__button .icon__linkedin:hover{
+  
+    height: 65px;
+    width: 65px;
+    margin: 0 100px 80px 0;
+    padding: 12px 11.5vw 8px 15px;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+
+/*About dSOpus*/
+.about__sample{
+    background-image: url("about__page.jpg");
+    background-size: cover;
+    color: #fff;
+    font-size: 7.5rem;
+    height: 100vh;
+    width: 100vw;
+    padding: 150px 30px 30px 30px;
+    border-radius: 10px;
+}
